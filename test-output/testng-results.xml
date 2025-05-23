@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-13T18:36:25 PST" name="Default suite" finished-at="2025-05-13T18:36:25 PST" duration-ms="27">
+    <groups>
+    </groups>
+    <test started-at="2025-05-13T18:36:25 PST" name="Default test" finished-at="2025-05-13T18:36:25 PST" duration-ms="27">
+      <class name="CoreJava_ObjOrient_Principles.PS2">
+        <test-method is-config="true" signature="runBefore()[pri:0, instance:CoreJava_ObjOrient_Principles.PS2@1ab3a8c8]" started-at="2025-05-13T18:36:25 PST" name="runBefore" finished-at="2025-05-13T18:36:25 PST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runBefore -->
+        <test-method signature="runTest()[pri:0, instance:CoreJava_ObjOrient_Principles.PS2@1ab3a8c8]" started-at="2025-05-13T18:36:25 PST" name="runTest" finished-at="2025-05-13T18:36:25 PST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runTest -->
+        <test-method is-config="true" signature="runAfter()[pri:0, instance:CoreJava_ObjOrient_Principles.PS2@1ab3a8c8]" started-at="2025-05-13T18:36:25 PST" name="runAfter" finished-at="2025-05-13T18:36:25 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runAfter -->
+      </class> <!-- CoreJava_ObjOrient_Principles.PS2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
