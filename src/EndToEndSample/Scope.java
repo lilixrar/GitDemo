@@ -19,38 +19,30 @@ public class Scope {
 		
 		System.out.println(driver.findElements(By.tagName("a")).size());
 		
-		WebElement footerDriver = driver.findElement(By.id("gf-BIG")); //limiting webdriver scope
+		WebElement footerDriver = driver.findElement(By.id("gf-BIG")); 
 		
 		System.out.println(footerDriver.findElements(By.tagName("a")).size());
+		System.out.println("Tester 2 Edited this~!!");
+		System.out.println("Tester 2 Edited this too~!!");
 		
-		WebElement leftFooterDriver = driver.findElement(By.xpath("//table/tbody/tr/td[1]/ul")); // further limiting webdriver scope
-		int leftmostCount = leftFooterDriver.findElements(By.tagName("a")).size(); // getting all the "a" links
-		List<WebElement> leftmostLinks = leftFooterDriver.findElements(By.tagName("a")); // listing all the links
+		WebElement leftFooterDriver = driver.findElement(By.xpath("//table/tbody/tr/td[1]/ul")); 
+		int leftmostCount = leftFooterDriver.findElements(By.tagName("a")).size();
+		List<WebElement> leftmostLinks = leftFooterDriver.findElements(By.tagName("a")); 
 		System.out.println(leftmostCount);
 		
-//		//clicking on each link in a specific part of the page
-//		for(int i = 1; i < leftmostCount; i++) {
-//			leftmostLinks.get(i).click();
-//		}  
-
-		//clicking on each link in a specific part of the page ---> opening new tabs & getting window titles
-		
-		
-		
 				for(int i = 1; i < leftmostCount; i++) {
-					String clickOnLinkTab = Keys.chord(Keys.COMMAND, Keys.ENTER); // like holding command + click on links
-					leftmostLinks.get(i).sendKeys(clickOnLinkTab);				// opens 4 tabs
+					String clickOnLinkTab = Keys.chord(Keys.COMMAND, Keys.ENTER); 
+					leftmostLinks.get(i).sendKeys(clickOnLinkTab);
 					}
 					
-					Set<String> windowNames = driver.getWindowHandles(); // 4 times	
+					Set<String> windowNames = driver.getWindowHandles();	
 					Iterator<String> iteratorz = windowNames.iterator();
 				
 				while(iteratorz.hasNext()) {
 					driver.switchTo().window(iteratorz.next());
 					System.out.println(driver.getTitle());
 					}
-					
-					
+
 				
 				}  
 	
